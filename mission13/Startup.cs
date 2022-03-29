@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using mission13.Models;
 
 namespace mission13
 {
@@ -24,6 +26,13 @@ namespace mission13
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<BowlingDbContext>(options =>
+            {
+                options.UseMySql(Configuration["ConnectionStrings:BowlingDbConnection"]);
+            });
+
+            services.AddScoped<IBowlersRepository, EFBowlersRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

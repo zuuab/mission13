@@ -11,14 +11,18 @@ namespace mission13.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController()
-        {
 
+        private IBowlersRepository _repo { get; set; }
+
+        public HomeController(IBowlersRepository temp)
+        {
+            _repo = temp;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var blah = _repo.Bowlers.ToList();
+            return View(blah);
         }
 
         public IActionResult Privacy()
