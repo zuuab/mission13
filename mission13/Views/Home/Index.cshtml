@@ -5,10 +5,57 @@
 @model List<Bowler>
 
 <h1>Bowlers</h1>
+@*<div class="d-grid gap-2">
 
-<ul>
-    @foreach (var b in Model)
+    <a asp-controller="Home" asp-action="Index" asp-route-teamName="" class="btn btn-block btn-outline-secondary">Home</a>
+
+    @foreach (string t in Model)
     {
-        <li>@b.BowlerID - @b.BowlerFirstName @b.BowlerLastName</li>
+        <a asp-controller="Home" asp-action="Index" asp-route-teamName="@t"
+           class="btn btn-block @(ViewBag.SelectedName == t ? "btn-primary" : "btn-outline-secondary")">@t</a>
     }
-</ul>
+
+</div>*@
+
+<table class="table table-sm table-striped table-bordered table-dark">
+    <thead>
+        <tr>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Middle Initial</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone Number</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var b in Model)
+        {
+        <tr>
+            <td>@b.BowlerLastName</td>
+            <td>@b.BowlerFirstName</td>
+            <td>@b.BowlerMiddleInit</td>
+            <td>@b.BowlerAddress</td>
+            <td>@b.BowlerCity</td>
+            <td>@b.BowlerState</td>
+            <td>@b.BowlerZip</td>
+            <td>@b.BowlerPhoneNumber</td>
+
+            <td>
+                <NavLink class="btn btn-warning btn-sm" href="">Edit</NavLink>
+            </td>
+            @*@GetEditUrl(b.BowlerID)*@
+
+            <td>
+                <NavLink class="btn btn-danger btn-sm">Delete</NavLink>
+            </td>
+            @*@onclick="@(x => RemoveBowler(b))*@
+
+        </tr>
+        }
+    </tbody>
+
+</table>
