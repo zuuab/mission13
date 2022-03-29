@@ -19,15 +19,13 @@ namespace mission13.Controllers
             _repo = temp;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int teamID = 0)
         {
-            var blah = _repo.Bowlers.ToList();
+            var blah = _repo.Bowlers
+                .Where(x => x.TeamID == teamID || teamID == 0)
+                .OrderBy(x => x.BowlerLastName)
+                .ToList();
             return View(blah);
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
     }
 }

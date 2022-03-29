@@ -55,3 +55,13 @@
 /Users/zachheaton/Documents/GitHub/mission13/mission13/obj/Debug/netcoreapp3.1/mission13.dll
 /Users/zachheaton/Documents/GitHub/mission13/mission13/obj/Debug/netcoreapp3.1/mission13.pdb
 /Users/zachheaton/Documents/GitHub/mission13/mission13/obj/Debug/netcoreapp3.1/mission13.genruntimeconfig.cache
+/Users/zachheaton/Documents/GitHub/mission13/mission13/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Teams/Default.cshtml.g.cs
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll

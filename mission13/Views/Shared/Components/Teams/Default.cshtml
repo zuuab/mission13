@@ -1,0 +1,22 @@
+﻿@{
+}
+
+@model IEnumerable<Team>
+
+@if (ViewBag.SelectedType == "0")
+{
+    <a asp-controller="Home" asp-action="Index" asp-route-teamID="0"
+       class="btn btn-block btn-primary">Home</a>
+}
+else
+{
+    <a asp-controller="Home" asp-action="Index" asp-route-teamID="0"
+       class="btn btn-block btn-outline-secondary">Home</a>
+}
+
+@foreach (Team t in Model)
+{
+    int selectedID = int.Parse(ViewBag.SelectedType);
+    <a asp-controller="Home" asp-action="Index" asp-route-teamID="@t.TeamID"
+       class="btn btn-block @(selectedID == t.TeamID ? "btn-primary" : "btn-outline-secondary")">@t.TeamName</a>
+}

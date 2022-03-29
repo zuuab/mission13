@@ -33,6 +33,7 @@ namespace mission13
             });
 
             services.AddScoped<IBowlersRepository, EFBowlersRepository>();
+            services.AddScoped<ITeamsRepository, EFTeamsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,7 +60,7 @@ namespace mission13
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{teamID?}");
             });
         }
     }
