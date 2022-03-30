@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{73F67D1C-285E-4D0B-8A44-77906BB43605}|Default">
   <MonoDevelop.Ide.ItemProperties.mission13 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="mission13/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="mission13/Views/Shared/Components/Teams/Default.cshtml">
     <Files>
-      <File FileName="mission13/Views/Home/Index.cshtml" Line="14" Column="49" />
-      <File FileName="mission13/Components/TeamsViewComponent.cs" Line="15" Column="10" />
-      <File FileName="mission13/Views/Shared/Components/Teams/Default.cshtml" Line="10" Column="1" />
-      <File FileName="mission13/Controllers/HomeController.cs" Line="24" Column="37" />
-      <File FileName="mission13/Startup.cs" Line="63" Column="71" />
-      <File FileName="mission13/Program.cs" Line="10" Column="20" />
+      <File FileName="mission13/Views/Home/Index.cshtml" Line="17" Column="27" />
+      <File FileName="mission13/Views/Shared/Components/Teams/Default.cshtml" Line="25" Column="17" />
+      <File FileName="mission13/Views/Shared/_Layout.cshtml" Line="31" Column="18" />
+      <File FileName="mission13/Components/TeamsViewComponent.cs" Line="30" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,11 +19,12 @@
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
-                    <Node name="Teams" expanded="True" />
+                    <Node name="Teams" expanded="True">
+                      <Node name="Default.cshtml" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

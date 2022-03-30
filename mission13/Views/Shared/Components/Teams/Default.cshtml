@@ -3,6 +3,28 @@
 
 @model IEnumerable<Team>
 
+@foreach (Team t in Model)
+{
+    int selectedID;
+    @if (ViewBag.SelectedType != null)
+    {
+        selectedID = int.Parse(ViewBag.SelectedType);
+    }
+    else
+    {
+        selectedID = 0;
+    }
+    @if (selectedID == t.TeamID)
+    {
+        <h2>@t.TeamName</h2>
+    }
+}
+
+@if (ViewBag.SelectedType == "0")
+{
+    <h2>All</h2>
+}
+
 @if (ViewBag.SelectedType == "0")
 {
     <a asp-controller="Home" asp-action="Index" asp-route-teamID="0"
@@ -16,7 +38,15 @@ else
 
 @foreach (Team t in Model)
 {
-    int selectedID = int.Parse(ViewBag.SelectedType);
+    int selectedID;
+    @if (ViewBag.SelectedType != null)
+    {
+        selectedID = int.Parse(ViewBag.SelectedType);
+    }
+    else
+    {
+        selectedID = 0;
+    }
     <a asp-controller="Home" asp-action="Index" asp-route-teamID="@t.TeamID"
        class="btn btn-block @(selectedID == t.TeamID ? "btn-primary" : "btn-outline-secondary")">@t.TeamName</a>
 }

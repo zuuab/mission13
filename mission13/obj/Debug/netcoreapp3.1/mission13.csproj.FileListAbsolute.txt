@@ -65,3 +65,5 @@
 /Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
 /Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
 /Users/zachheaton/Documents/GitHub/mission13/mission13/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
+/Users/zachheaton/Documents/GitHub/mission13/mission13/obj/Debug/netcoreapp3.1/Razor/Views/Home/EditAddBowler.cshtml.g.cs
+/Users/zachheaton/Documents/GitHub/mission13/mission13/obj/Debug/netcoreapp3.1/Razor/Views/Home/Delete.cshtml.g.cs
